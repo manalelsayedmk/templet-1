@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container{
+    width: 90%;
+    margin: 100px auto;
+}
+a{
+    text-decoration: none;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    padding: 20px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    background-color: white;
+
+}
+
+.navright a{
+    font-size: 30px;
+    color: black;
+    transition: 0.5s;
+    padding: 10px;
+}
+.navright a span{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+nav .navleft ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+
+}
+
+nav .navleft ul a{
+    color: black;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+nav .bx{
+ display: none;
+ cursor: pointer;
+ font-size: 30px;
+}
+
+nav .navright :hover{
+    background-color: #ccc;
+    border-radius: 10px;
+    
+}
+
+nav .navleft ul a:hover {
+background-color: #ccc;
+border-radius: 20px;
+}
+
+
+header{
+    background-image: url(header.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h2{
+    font-size: 50px;
+    color: white;
+
+}
+header h2 span{
+background-color: #000;
+opacity: 0.7;
+padding: 10px;
+}
+
+.projects h1{
+    font-size: 50px;
+
+}
+
+
+.houses{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 50px;
+}
+.house{
+    width: 24%;
+    position: relative;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.house:hover{
+    transform: translateY(-10px);
+}
+.house img{
+    width: 100%
+}
+
+.house p{
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    color: white;
+    width: max-content;
+    padding: 10px;
+    
+}
+
+hr{
+    margin: 30px 10px;
+    opacity: 0.5;
+}
+.about h1{
+    font-size: 50px;
+}
+
+.about p{
+    font-size: 20px;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+.persons{
+display: flex;
+gap: 10px;
+position: relative;
+margin-top: 30px;
+}
+
+.person{
+    width: 24%;
+}
+
+.person img{
+    width: 100%;
+}
+
+.person >*{
+   margin: 10px; 
+}
+.person h4{
+    opacity: 0.7;
+    font-size: 20px;
+}
+.person button{
+    border-radius: 20px;
+    font-size: 20px;
+    margin-left: 30%;
+    padding: 10px;
+    background-color: rgb(204, 202, 202);
+    width: 100px;
+    transition: 0.5s;
+    border: none;
+}
+.person button:hover{
+    background-color: blue;
+    cursor: pointer;
+    color: #fff;
+}
+
+.all{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.contact h1{
+    font-size: 50px;
+}
+
+.contact p{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.right{
+    width: 50%;
+}
+.right input{
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    flex-direction: column;
+    background-color: #eee;
+    border: none;
+    outline: none;
+}
+
+.contact button{
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+    border: none;
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+
+}
+
+.contact button:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.left{
+    width: 50%;
+}
+.left img{
+    width: 100%;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+@media screen and ( max-width : 480px) {
+   
+    nav{
+        padding: 10px;
+    }
+    
+    nav .navleft ul {
+        display: none;
+    }
+
+    nav .bx{
+        display: block;
+    }
+
+    header h2{
+        margin-top: 10px;
+    }
+
+    .houses{
+        flex-direction: column;
+       
+    }
+
+    .house{
+        width: 100%;
+    }
+
+    .persons{
+        flex-direction: column;
+    }
+    .person{
+        width: 100%;
+    }
+    .all{
+        flex-direction: column;
+    }
+
+    .right {
+        width: 100%;
+    }
+    .right input{
+        justify-content: center;
+        width: 90%;
+    }
+    .left {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width :481px) and (max-width:768px){
+
+     nav{
+        padding: 10px;
+    }
+    
+    nav .navleft ul {
+        display: none;
+    }
+
+    nav .bx{
+        display: block;
+    }
+
+    header h2{
+        margin-top: 10px;
+    }
+
+    
+
+    .house{
+        width: 48%;
+    }
+
+    .persons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .person{
+        width: 48%;
+    }
+    
+
+    
+    .all{
+        flex-direction: column;
+    }
+
+    .right {
+        width: 100%;
+    }
+    .right input{
+        justify-content: center;
+        width: 60%;
+    }
+    .left {
+        width: 100%;
+    }
+
+}
